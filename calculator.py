@@ -5,11 +5,14 @@ def add(a: float, b: float) -> float:
 def subtract(a: float, b: float) -> float:
     return a - b
 
+def multiply(a: float, b: float) -> float:
+    return a * b
 
 def main() -> None:
     print("Simple Calculator")
     print("1) Add")
     print("2) Subtract")
+    print("3) Multiply")
 
     choice = input("Choose (1/2): ").strip()
 
@@ -20,6 +23,8 @@ def main() -> None:
         print("Result:", add(a, b))
     elif choice == "2":
         print("Result:", subtract(a, b))
+    elif choice == "3":
+        print("Result:", multiply(a, b))
     else:
         print("Invalid choice")
 
